@@ -3,25 +3,47 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --black: #070709;
+  --white: #e8e8e8;
+  --accent: #c6e643;
+  --accent2: #14e6c3;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.btn_animation {
+  overflow: hidden;
+}
+
+.btn_animation::after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 75%;
+  transform: translate();
+  background-image: conic-gradient(transparent, transparent, var(--accent));
+}
+.btn_animation::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 75%;
+  background-image: conic-gradient(var(--accent), transparent, transparent);
+}
+
+.active::before,
+.active::after {
+  animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
