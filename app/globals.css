@@ -22,7 +22,7 @@ body {
   content: "";
   position: absolute;
   width: 200%;
-  height: 75%;
+  height: 80%;
   transform: translate();
   background-image: conic-gradient(transparent, transparent, var(--accent));
 }
@@ -30,7 +30,7 @@ body {
   content: "";
   position: absolute;
   width: 200%;
-  height: 75%;
+  height: 80%;
   background-image: conic-gradient(var(--accent), transparent, transparent);
 }
 

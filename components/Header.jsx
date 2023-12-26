@@ -5,7 +5,7 @@ import HamMenu from "./ui/HamMenu";
 
 const Header = () => {
   return (
-    <header className='w-full h-20 z-50 bg-transparent'>
+    <header className='absolute left-0 top-0 w-full h-20 z-50 bg-transparent'>
       <nav className='h-full container mx-auto flex items-center justify-between'>
         <Logo />
         <Nav />
