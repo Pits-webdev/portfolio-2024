@@ -25,7 +25,7 @@ const links = [
 const Nav = () => {
   return (
     <header className='w-full h-[72px]'>
-      <nav className='_container h-full flex justify-between items-center'>
+      <nav className='_container h-full flex justify-between items-center text-base'>
         <div className='basis-1/5 flex items-center justify-start'>
           <Link href='/'>Logo</Link>
         </div>

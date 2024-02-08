@@ -13,7 +13,8 @@ module.exports = {
         white: "var(--white)",
         gray: "var(--gray)",
         accent: "var(--accent)",
-        background: "var(--background)",
+        bg_dark: "var(--bg_dark)",
+        bg_light: "var(--bg_light)",
       },
 
       borderColor: {
