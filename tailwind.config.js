@@ -11,7 +11,19 @@ module.exports = {
       colors: {
         black: "var(--black)",
         white: "var(--white)",
+        gray: "var(--gray)",
         accent: "var(--accent)",
+        background: "var(--background)",
+      },
+
+      borderColor: {
+        light: "var(--gray)",
+      },
+
+      /* FONTS */
+      fontFamily: {
+        Inter: "Inter, sans-serif",
+        DMSans: "DMSans, sans-serif",
       },
 
       backgroundImage: {
