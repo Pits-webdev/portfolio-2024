@@ -28,7 +28,7 @@
   }
 
   body {
-    @apply font-DMSans bg-background text-white;
+    @apply font-DMSans bg-background text-white text-lg;
   }
 
   ._app {
@@ -50,5 +50,9 @@
 
   h2 {
     @apply font-Inter text-[32px];
+  }
+
+  h3 {
+    @apply font-Inter text-[20px];
   }
 }

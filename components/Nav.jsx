@@ -16,6 +16,10 @@ const links = [
     name: "arbeit",
     path: "/work",
   },
+  {
+    name: "über mich",
+    path: "/about",
+  },
 ];
 
 const Nav = () => {
