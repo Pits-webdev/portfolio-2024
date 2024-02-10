@@ -1,4 +1,6 @@
 import { Facebook, Twitter } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -6,7 +8,14 @@ const Footer = () => {
       <div className='_container py-[56px]'>
         <div className='grid grid-cols-6 grid-row-2 gap-y-36'>
           <div className='col-start-1 col-end-4 row-start-1 row-end-2'>
-            Logo
+            <Link href='/'>
+              <Image
+                src='/images/Logo_black.png'
+                alt='Logo'
+                width={160}
+                height={80}
+              />
+            </Link>
           </div>
           <div className='col-start-4 col-end-7 row-start-1 row-end-2 flex justify-between'>
             <div>

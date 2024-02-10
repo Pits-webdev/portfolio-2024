@@ -25,7 +25,7 @@ const Hero = () => {
           </p>
         </div>
         <div className='max-w-[488px] px-7 py-8 border-gray border-[1px] rounded-xl '>
-          <h3 className='mb-4'>Design</h3>
+          <h3 className='mb-4'>Entwicklung</h3>
           <p className='text-gray'>
             Ich arbeite mit den neuesten Webtechnologien um das maximum und
             einen reibungslosen ablauf zu gewährleisten.

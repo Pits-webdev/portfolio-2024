@@ -1,6 +1,7 @@
 "use client";
 
 import { Sun, Moon } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 const links = [
@@ -27,7 +28,14 @@ const Nav = () => {
     <header className='w-full h-[72px]'>
       <nav className='_container h-full flex justify-between items-center text-base'>
         <div className='basis-1/5 flex items-center justify-start'>
-          <Link href='/'>Logo</Link>
+          <Link href='/'>
+            <Image
+              src='/images/Logo_white.png'
+              alt='Logo'
+              width={80}
+              height={40}
+            />
+          </Link>
         </div>
         <ul className='basis-4/5 sm:flex items-center justify-center gap-16 hidden  '>
           {links.map(({ name, path }) => (
