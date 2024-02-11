@@ -1,4 +1,18 @@
-import React from "react";
+"use client";
+
+import { motion } from "framer-motion";
+
+const arrowDownVariants = {
+  form: { y: 0 },
+  to: {
+    y: [0, 12, 6, 0, 4, 12, 0],
+    transition: {
+      duration: 1.7,
+      ease: "linear",
+      repeat: Infinity,
+    },
+  },
+};
 
 const Hero = () => {
   return (
@@ -87,7 +101,12 @@ const Hero = () => {
           <g clipPath='url(#b)'>
             <use xlinkHref='#a' fill='none' stroke='url(#c)' strokeWidth={2} />
           </g>
-          <g fill='none'>
+          <motion.g
+            variants={arrowDownVariants}
+            initial='from'
+            animate='to'
+            fill='none'
+          >
             <path
               stroke='url(#d)'
               d='M24 46.095 11.993 59 0 46'
@@ -98,7 +117,7 @@ const Hero = () => {
               d='M12.096 59.01 12 0'
               transform='translate(34)'
             />
-          </g>
+          </motion.g>
         </svg>
       </div>
     </div>
