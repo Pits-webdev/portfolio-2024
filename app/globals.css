@@ -2,13 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+:root[data-theme="dark"] {
   --white: hsl(0, 0%, 95%);
   --black: hsl(0, 0%, 5%);
   --gray: hsl(0, 0%, 59%);
   --accent: hsl(72, 77%, 58%);
   --bg_dark: hsl(0, 0%, 18%);
   --bg_light: hsl(137, 10%, 87%);
+}
+
+:root[data-theme="light"] {
+  --black: hsl(0, 0%, 95%);
+  --white: hsl(0, 0%, 5%);
+  --gray: hsl(0, 0%, 59%);
+  --accent: hsl(72, 77%, 58%);
+  --bg_light: hsl(0, 0%, 18%);
+  --bg_dark: hsl(0, 0%, 95%);
 }
 
 @layer base {

@@ -1,20 +1,33 @@
+"use client";
+
+import { useColorTheme } from "@/store/store";
 import { Facebook, Twitter } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
+  const theme = useColorTheme((state) => state.theme);
   return (
     <footer className='bg-bg_light text-black rounded-t-[36px]'>
       <div className='_container py-[56px]'>
         <div className='grid grid-cols-6 grid-row-2 gap-y-36'>
           <div className='col-start-1 col-end-4 row-start-1 row-end-2'>
             <Link href='/'>
-              <Image
-                src='/images/Logo_black.png'
-                alt='Logo'
-                width={160}
-                height={80}
-              />
+              {theme === "dark" ? (
+                <Image
+                  src='/images/Logo_black.png'
+                  alt='Logo'
+                  width={160}
+                  height={60}
+                />
+              ) : (
+                <Image
+                  src='/images/Logo_white.png'
+                  alt='Logo'
+                  width={160}
+                  height={60}
+                />
+              )}
             </Link>
           </div>
           <div className='col-start-4 col-end-7 row-start-1 row-end-2 flex justify-between'>
@@ -45,7 +58,7 @@ const Footer = () => {
             </div>
           </div>
           <div className='col-start-4 col-end-7 row-start-2 row-end-3 flex justify-end items-end'>
-            <p>© Webdev Pit 2024</p>
+            <p>© PS Webdev 2024</p>
           </div>
         </div>
       </div>
