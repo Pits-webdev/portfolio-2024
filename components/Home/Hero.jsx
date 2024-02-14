@@ -42,7 +42,7 @@ const Hero = () => {
           <h3 className='mb-4'>Entwicklung</h3>
           <p className='text-gray'>
             Ich arbeite mit den neuesten Webtechnologien um das maximum und
-            einen reibungslosen ablauf zu gewährleisten.
+            einen reibungslosen Ablauf zu gewährleisten.
           </p>
         </div>
       </div>

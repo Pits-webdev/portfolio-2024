@@ -37,10 +37,6 @@ const Nav = () => {
     }
   }, [theme]);
 
-  /* const handleTheme = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
-  }; */
-
   return (
     <header className='w-full h-[72px]'>
       <nav className='_container h-full flex justify-between items-center text-base'>
@@ -50,8 +46,8 @@ const Nav = () => {
               <Image
                 src='/images/Logo_white.png'
                 alt='Logo'
-                width={80}
-                height={40}
+                width={90}
+                height={60}
               />
             ) : (
               <Image
@@ -73,6 +69,7 @@ const Nav = () => {
 
         <div className='basis-1/5 flex items-center justify-end gap-6'>
           <button
+            type='button'
             className='border-light border-[1px] rounded-lg flex p-2'
             onClick={toggleTheme}
           >

@@ -51,7 +51,7 @@ const Footer = () => {
           </div>
           {/* row2 */}
           <div className='col-start-1 col-end-4 row-start-2 row-end-3'>
-            <p className='mb-2'>Schreiben Sie uns eine E-Mail! </p>
+            <p className='mb-2'>Schreiben Sie mir eine E-Mail! </p>
             <div className='w-fit'>
               <p className='text-4xl'>pitswebdev@email.com</p>
               <span className='w-full h-[1px] bg-black block mt-2'></span>
