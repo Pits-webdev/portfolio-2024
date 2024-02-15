@@ -1,11 +1,7 @@
 import { useFrame } from "@react-three/fiber";
-import { useEffect, useMemo, useRef } from "react";
-import { MeshStandardMaterial } from "three";
+import { useMemo, useRef } from "react";
 import * as THREE from "three";
-
-//Shader glsl
-import fragment from "@/shaders/fragment.glsl";
-import vertex from "@/shaders/vertex.glsl";
+import IcoshedronGeometry from "./IcoshedronGeometry";
 
 //particle Geomerry
 const BasicParticles = (props) => {
@@ -99,18 +95,6 @@ const BasicParticles = (props) => {
   );
 };
 
-// Box Geometry
-
-const BoxGeometry = () => {
-  return (
-    <mesh>
-      <boxGeometry />
-      {/*  <meshStandardMaterial color={"green"} /> */}
-      <shaderMaterial vertexShader={vertex} fragmentShader={fragment} />
-    </mesh>
-  );
-};
-
 const Scene = () => {
   const boxRef = useRef();
 
@@ -134,7 +118,7 @@ const Scene = () => {
       {/* Object */}
       {/* <BasicParticles count={2000} geometry='kugel' /> */}
 
-      <BoxGeometry />
+      <IcoshedronGeometry />
     </>
   );
 };
